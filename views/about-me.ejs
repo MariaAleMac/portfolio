@@ -1,0 +1,43 @@
+<!-- Name: Maria Macias
+StudentId: 301290835
+Date: May 28th 2023
+File name: about-me.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+<!-- Navigation bar -->
+<header>
+  <%- include('./partials/header'); %>
+</header>
+
+<!-- body about me -->
+<main>
+  <div class="jumbotron bg-light">
+    <!-- title -->
+    <h1>About Me! </h1>
+    <div class="row portfolio">
+      <!-- description -->
+      <div class="col-md-7 portfolio-description">
+        <p >My name is Maria Macias, I'm from Bogotá, Colombia, and I'm currently an international student in the program Software Engineering Technology (Fast-Track) at Centennial College - Progress Campus. </p>
+        <p> I did my bachelor's degree as a Mechatronic Engineer, and I've worked as a Full Stack developer for 3 years, using frameworks such as Angular, React.js, and Vue.js; as well as advanced database concepts with a wide range of knowledge in programming utilities and languages such as Java, Javascript, Typescript and C#.</p>
+        <p> I'm skilled in adapting to new situations and challenges to best enhance any problem solving process. I'm fluent in English and Spanish and accustomed to working with cross-cultural, global teams.</p>
+        <!-- download resume file -->
+        <p> Resume: <a href="/images/CV-MariaMacias.pdf" download> <img height="40px" src="../images/cv-logo.svg" /> </a></p>
+      </div>
+      <!-- image  -->
+      <img class="col-md-4 rounded mx-auto d-block" height="450px" src="../images/mariamacias.jpeg" />
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>

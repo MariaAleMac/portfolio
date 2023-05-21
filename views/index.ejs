@@ -1,0 +1,46 @@
+<!-- Name: Maria Macias
+StudentId: 301290835
+Date: May 28th 2023
+File name: index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+<!-- Navigation bar -->
+<header>
+  <%- include('./partials/header'); %>
+</header>
+
+<!-- body home portfolio -->
+<main>
+  <div class="jumbotron bg-light">
+    <!-- Title -->
+    <h1>Welcome to my Portfolio! </h1>
+    <div class="row portfolio">
+      <!-- Description -->
+      <p class="col-md-7 portfolio-description">In my portfolio, you will find a curated collection of my work, highlighting some of my most significant projects and accomplishments, as well as educational background. Each project showcases my knowledge, as well as abilities to deliver results in a creative, problem-solving and detail-oriented manner.</p>
+      <!-- List -->
+      <ul class="col-md-4">
+        <li>
+          <a href="/about-me">About me</a>
+        </li>
+        <li>
+          <a href="/my-projects">My Projects</a>
+        </li>
+        <li>
+          <a href="/services">Services</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>

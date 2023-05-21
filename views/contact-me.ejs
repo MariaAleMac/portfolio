@@ -1,0 +1,83 @@
+<!-- Name: Maria Macias
+StudentId: 301290835
+Date: May 28th 2023
+File name: contact-me.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+<!-- Navigation bar -->
+<header>
+  <%- include('./partials/header'); %>
+</header>
+
+<!-- body contact me form -->
+<main>
+  <div class="jumbotron">
+    <!-- Title -->
+    <h1>Contact Me!</h1>
+    <!-- Contact form -->
+    <div class="row">
+      <div class="col-md-12 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form">
+              <div class="row">
+                <!-- Name input -->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Name</label>
+                      </div>
+                  </div>
+                  <!-- Email input -->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Email</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!-- Subject input -->
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!-- Message Input -->
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Message</label>
+                      </div>
+                  </div>
+              </div>
+          </form>
+          <!-- Submit button and redirect to home -->
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" href="/">Send message</a>
+          </div>
+      </div>
+      <!-- Contact information -->
+      <div class="col-md-12 text-center">
+          <h3>Contact Information: </h3>
+          <div>Maria Macias</div>
+          <div>Phone number: (+1) 437 366 0343</div>
+          <div>Email: mmaciasp@my.centennialcollege.ca</div>
+      </div>
+  </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>

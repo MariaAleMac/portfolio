@@ -1,0 +1,62 @@
+<!-- Name: Maria Macias
+StudentId: 301290835
+Date: May 28th 2023
+File name: my-projects.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+<!-- Navigation bar -->
+<header>
+  <%- include('./partials/header'); %>
+</header>
+
+<!-- body my projects -->
+<main>
+  <div class="jumbotron row m-0">
+    <div class="col-md-12 portfolio-description">
+      <!-- Title -->
+      <h1>My Projects!</h1>
+      <p >Here are some projects I have worked on:</p>
+    </div>
+    <!-- My projects section -->
+    <div class="col-md-6">
+      <h3 class="p-3">Birdsong Tablet:</h3>
+      <p class="p-4 project-description">Birdsong is a senior engagement technology solution that provides virtual caregiving and engagement for seniors. This table application contains features such as third party content, chat, videocalls, and many others. The correspondant dashboard would provide analytics on feature engagement and user usability.</p>
+      <img  class="rounded mx-auto d-block" height="200px" src="../images/birdsong-tablet.jpg" />
+    </div>
+    <div class="col-md-6">
+      <h3 class="p-3">"Puedo Dejar de Fumar":</h3>
+      <p class="p-4 project-description">The goal of "Puedo dejar de Fumar" is to provide live, real-time support so you can learn about smoking-related issues. This landing page was built on a CMS platform using HTML, CSS and JavaScript.
+        <a href="https://puedodejardefumar.org/" target="_blank">https://puedodejardefumar.org/</a>
+      </p>
+      <img class="rounded mx-auto d-block" height="200px" src="../images/puedo-dejar-de-fumar.png" />
+    </div>
+    <div class="col-md-6">
+      <h3 class="p-3">"Centro Envios y Mas":</h3>
+      <p class="p-4 project-description">"Centro envios y más" is a virtual locker service  where you will automatically obtain a physical storage address in the United States for free, so you can buy whatever you want and get it to your door at the best rate. This landing page was built on a CMS platform using HTML, CSS and JavaScript.
+        <a href="https://centroenviosymas.com/casillero/" target="_blank">https://centroenviosymas.com/casillero/</a>
+      </p>
+      <img class="rounded mx-auto d-block" height="200px" src="../images/centro-envios.png" />
+    </div>
+    <div class="col-md-6">
+      <h3 class="p-3">Uruit:</h3>
+      <p class="p-4 project-description">Uruit is a Digital products company based in Latin America and with clients in the US and Canada. This landing page was built on a CMS platform Netlify using React.js and Gatsby.js
+        <a href="https://uruit.com/" target="_blank">https://uruit.com/</a> 
+      </p>
+      <img class="rounded mx-auto d-block" height="200px" src="../images/uruit-web.png" />
+    </div>
+    
+  </div>
+  </div>
+</main>
+<!-- Footer -->
+<footer>
+  <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>
