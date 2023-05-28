@@ -7,14 +7,30 @@ var express = require('express');
 var router = express.Router();
 
 /* GET pages. */
+
 router.get('/', function(req, res, next) {
-  //Identify which route is being called and render view accordingly
-  if(req.originalUrl == '/contact-me') res.render('contact-me');
-  else if (req.originalUrl == '/my-projects') res.render('my-projects')
-  else if (req.originalUrl == '/services') res.render('services')
-  else if (req.originalUrl == '/about-me') res.render('about-me')
-  else if (req.originalUrl == '/home') res.render('index')
-  
+  res.render('index');
 });
+
+router.get('/home', function(req, res, next) {
+  res.render('index');
+});
+
+router.get('/about-me', function(req, res, next) {
+  res.render('about-me');
+});
+
+router.get('/contact-me', function(req, res, next) {
+  res.render('contact-me');
+});
+
+router.get('/services', function(req, res, next) {
+  res.render('services');
+});
+
+router.get('/my-projects', function(req, res, next) {
+  res.render('my-projects');
+});
+
 
 module.exports = router;
